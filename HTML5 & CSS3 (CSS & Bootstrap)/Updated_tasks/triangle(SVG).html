@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .triangle-container{
+  width: 500px;
+  text-align:center;
+  .triangle{
+    fill:red; 
+  }
+} 
+.width_para{  
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  font-size: xx-large;
+}
+.para{
+  position: absolute;
+  left: 30%;
+  top: 28%;
+  font-size: xx-large;
+  
+  
+}
+.height_para{
+  position: absolute;
+  right: 10%;
+  top: 28%;
+  font-size: xx-large;
+  
+}
+math{
+    color: red;
+    font-size: xx-large;
+}
+p{font-size: xx-large;}
+.all{position: absolute;
+left: 35%;
+}
+.equation{
+    position: absolute;
+    left: 25%;
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+
+     <div class="triangle-container">
+         <svg height="500" width="500">
+              <polygon points="0 400 ,400 0,400 400" class="triangle" />
+         </svg>
+            <div class="para">c</div>
+            <div class="height_para">b</div>
+            <div class="width_para">a</div>
+            </div>
+            <p>According to pythagoras theorem </p>
+            <div class="equation">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                      <mi>c</mi>
+                      <mo>=</mo>
+                      
+                        <mrow>
+                          <msqrt>
+                            <msup>
+                              <mi>a</mi>
+                              <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>              
+                             <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                              </msup>
+                            
+                          </msqrt>
+                        </mrow>
+                    </mrow>
+                  </math>
+            </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>HTML5 Canvas - shadow</title>
+    <style>
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        #DemoCanvas {
+            position: relative;
+            bottom:15%;
+            left: 16px;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./Cute_rabbit_with_duck_working_on_laptop_cartoon_illustration.jpg" alt="Snow" style="width:100%;">
+        <canvas id="DemoCanvas" width="500" height="600"></canvas> 
+    </div>
+<script>
+var canvas = document.getElementById("DemoCanvas");
+if (canvas.getContext) 
+{
+ var ctx = canvas.getContext('2d');
+ ctx.fillStyle = 'black';
+ ctx.shadowColor = 'black';
+ ctx.shadowBlur = 10;
+ ctx.shadowOffsetX = 2;
+ ctx.shadowOffsetY =3;
+ //ctx.fill();
+ ctx.font = 'italic 32px sans-serif';
+ ctx.fillText('HTML5 Canvas Tutorial', 10, 50);  
+      
+}
+</script>
+</body> 
+</html>
