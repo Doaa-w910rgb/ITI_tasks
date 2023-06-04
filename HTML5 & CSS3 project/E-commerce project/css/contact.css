@@ -1,0 +1,43 @@
+@import "nav.css";
+
+body {
+  background-image: url("../Images/4.jpg");
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #543304;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7f1439;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(227, 130, 19);
+  }
+}
